@@ -39,7 +39,7 @@ namespace CameraRFID
         private double measureTEMP=0, measureHUMID=0, measureCO2=0, measureNH3=0;
         private double measureWeight = 0;
         private double measureWormWeight = 0;
-        private string instarName = "";
+        private string instarName;
 
 
         public MainForm()
@@ -363,6 +363,24 @@ namespace CameraRFID
         //생육단계 선택
         private void selectInstarName(object sender, EventArgs e)
         {
+            string name = selectInstarBox.SelectedItem.ToString();
+
+            if (name == "알")
+            {
+                instarName = "EGG";
+            }
+            else if (name == "유충")
+            {
+                instarName = "LARVA";
+            }
+            else if (name == "번데기")
+            {
+                instarName = "PUPA";
+            }
+            else if (name == "성충")
+            {
+                instarName = "IMAGO";
+            }
 
         }
 
