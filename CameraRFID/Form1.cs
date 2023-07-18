@@ -355,8 +355,6 @@ namespace CameraRFID
             measureWormWeight = double.Parse(input_wormWeight.Text);
 
             }
-
-            Console.WriteLine(measureWormWeight);
         }
 
 

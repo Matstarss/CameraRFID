@@ -69,7 +69,7 @@ namespace CameraRFID
                     diaryItmes.Add(wormWeight);
 
 
-                    bodyMessage.Add("diaryItmes", diaryItmes);
+                    bodyMessage.Add("diaryItems", diaryItmes);
                     bodyMessage.Add("tags", tags);
 
 
